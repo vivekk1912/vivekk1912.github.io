@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Xompatible" content="IE-edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Vivek Kamble</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Vivek Kamble</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Vivek Kamble profile picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello, I'm</p>
+            <h1 class="title">Vivek Kamble</h1>
+            <p class="section__text__p2">Automation Engineer </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Vivek_Kamble.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-containe">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/kamblevivek'">
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/vivekk1912'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Discover More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png"
+                alt="Profile picture"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="Experience icon" 
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ years <br>Automation</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Education icon" 
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>M.Sc. Robotics<br>B.Tech. Mechatronics</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm an Automation Engineer with a B.Tech in Mechatronics and M.Sc in Robotics, specializing in industrial control systems.
+                        My expertise includes PLC programming (Rockwell), SCADA/HMI development (FactoryTalk), and industrial network integration
+                        (Ethernet/IP, Profibus). With hands-on experience in panel testing, sensor integration, and troubleshooting automation systems,
+                        I'm passionate about developing efficient and reliable industrial solutions. I thrive on implementing smart control systems that
+                        optimize performance and drive innovation in industrial automation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Trainee Engineer and Instructor — Indo-German Tool Room, India</h2>
+                    <div class="article-container">
+                        <li>
+                            Programmed and simulated PLC systems (Ladder Logic, STL, FBD) for
+                            real-world applications like Automatic Star-Delta Starters and 4-floor
+                            lift control.
+                        </li>
+                        <li>
+                            Taught and implemented sensor integration (limit switches,
+                            photoelectric sensors, proximity sensors) with discrete and analog I/O
+                            modules.
+                        </li>
+                        <li>
+                            Worked on industrial networking (Fieldbus, Ethernet, TCP/IP) and
+                            introduced SCADA systems for remote monitoring and control.
+                        </li>
+                        <li>
+                            Designed PLC-based solutions by converting relay logic circuits into
+                            digital automation systems, improving system efficiency and
+                            reliability.
+                        </li>
+                        <li>
+                            Conducted workshops on Data Acquisition Systems (DAS), PID control,
+                            and SCADA architecture for industrial automation.
+                        </li>
+                        <!-- <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Mechatronics System Design</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Robotics & Automation (Kinematics, Dynamics)</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Control systems and Automation</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>PLC Programming</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Embedded Systems & Microcontrollers (Arduino)</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Programming (C,C++,Python)</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article> -->
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Automation Intern — TechMission, India</h2>
+                    <div class="article-container">
+                        <li>
+                            PLC & Automation: Hands-on experience with Rockwell PLCs, control panels
+                            (MCC, Dewatering Pump), and industrial I/O architectures.
+                        </li>
+                        <li>
+                            SCADA/HMI Development: Designed static SCADA screens using FactoryTalk
+                            View Studio for EPIPL based on P&ID diagrams.
+                        </li>
+                        <li>
+                            Panel Testing & Troubleshooting: Tested electrical panels (Ralson Tyres)
+                            and validated circuit diagrams for accuracy.
+                        </li>
+                        <li>
+                            Industrial Networks: Worked with Ethernet/IP, Profibus, and Modbus for
+                            system integration.
+                        </li>
+                        <li>
+                            Problem-Solving: Improved workflow efficiency and documentation practices
+                            in automation projects.
+                        </li>
+                        <!-- <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Project Management</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Team Collaboration</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Problem-Solving</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Technical Training & Mentorship</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Customer Service</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Recruitment & HR Skills</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Mechatronics System Design</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Robotics & Automation (Kinematics, Dynamics)</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Control systems and Automation</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>PLC Programming</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Embedded Systems & Microcontrollers (Arduino)</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Programming (C,C++,Python)</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Soft & Applied Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Project Management</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Team Collaboration</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Problem-Solving</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Technical Training & Mentorship</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Customer Service</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Recruitment & HR Skills</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.jpg" 
+                        alt="Project 1" 
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Agitation System for 2D and 3D Self-Assembly</h2>
+                    <div class="text-container">
+                        <p>Designed and tested a specialized agitation system to compare the efficiency of two-dimensional
+                            and three-dimensional modular self-assembly in robotics. The findings
+                            advance understanding of self-assembly dynamics in modular robotics, providing valuable insights
+                            for applications in adaptive manufacturing and space exploration.
+                        </p>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/vivekk1912'">
+                            Read More...
+                        </button>
+                        <!-- <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/vivekk1912'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.jpeg" 
+                        alt="Project 2" 
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Autonomous Robot for Complex Manipulation and Navigation Tasks</h2>
+                    <div class="text-container">
+                        <p>Designed and built a mechatronic robot featuring DC motors for mobility, servo motors
+                            for a marker-equipped robotic arm, and an Arduino Mega for control. The robot
+                            successfully demonstrated autonomous drawing and precise navigation through an arena,
+                            integrating inverse kinematics for smooth operation. The project showcased skills in
+                            CAD design, embedded systems, and collaborative engineering.
+                        </p>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/vivekk1912'">
+                            Read More...
+                        <!-- </button>
+                        <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/vivekk1912'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.jpeg" 
+                        alt="Project 3" 
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Smart Helmet for Rider Safety</h2>
+                    <div class="text-container">
+                        <p>Smart Helmet is an Arduino-based safety system designed to ensure motorcyclists
+                            wear helmets and avoid drunken driving. It uses sensors (tactile switch, MQ135
+                            alcohol sensor, and IR eye-blink detector) to prevent bike ignition if safety
+                            rules are violated, while an anti-sleep alarm alerts drowsy riders. The project
+                            highlights embedded systems' potential to reduce accidents and can be expanded
+                            with GPS/GSM for real-time tracking.
+                        </p>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/vivekk1912'">
+                            Read More...
+                        </button>
+                        <!-- <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/vivekk1912'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="contact-left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><a href="mailto:vivekkamble1912@gmail.com"><i class="fa-solid fa-paper-plane fa-2xl" style="color: #000000;"></i>vivekkamble1912@gmail.com</a></p>
+                    <p><a href="https://www.linkedin.com/in/kamblevivek"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i>linkedin.com/in/kamblevivek</a></p>
+                    <div class="social-icons">
+                        <a href="https://github.com/vivekk1912"><i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i></a>
+                        <a href="https://x.com/Knucklehead1912"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000;"></i></a>
+                        <a href="https://www.instagram.com/knucklehead19_"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #000000;"></i></a>
+                        <!-- <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/vivekk1912'">
+                        <img src="./assets/twitterx.png" alt="My Github Profile" class="icon" onclick="location.href='https://x.com/Knucklehead1912'">
+                        <img src="./assets/instagram.png" alt="My Github Profile" class="icon" onclick="location.href='https://www.instagram.com/knucklehead19_'"> -->
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/xzzrzjyo" method="post" onsubmit="setTimeout(() => this.reset(), 1000); return true;">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-color-2 project-btn">Submit</button>
+                        <input type="text" name="_gotcha" style="display:none">
+                        <div id="form-status" class="form-status" style="display:none"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon">
+                <p><a href="mailto:vivekkamble1912@gmail.com">vivekkamble1912@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/kamblevivek">linkedin.com/in/kamblevivek</a></p>
+            </div>
+        </div> -->
+    </section>
+    <footer>
+        <!-- <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav> -->
+        <div class="copyright">
+            <p>Copyright &#169; <span id="current-year"></span> Vivek Kamble. All Rights Reserved.</p>
+        </div>
+        <script>
+            // Automatically update year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="script.js"></script>    
+</body>
+</html>
