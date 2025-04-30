@@ -448,11 +448,11 @@ article .icon {
     margin: 1rem;
 }
 
-.fa-solid fa-paper-plane fa-2xl a:hover {
+.fa-solid a:hover {
     transform: translateY(-5px)
 }
 
-.fa-brands fa-linkedin fa-2xl a:hover {
+.fa-brands a:hover {
     transform: translateY(-5px)
 }
 
