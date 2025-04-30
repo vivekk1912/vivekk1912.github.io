@@ -448,6 +448,14 @@ article .icon {
     margin: 1rem;
 }
 
+.fa-solid fa-paper-plane fa-2xl a:hover {
+    transform: translateY(-5px)
+}
+
+.fa-brands fa-linkedin fa-2xl a:hover {
+    transform: translateY(-5px)
+}
+
 .contact-info-container p {
     font-size: larger;
 }
