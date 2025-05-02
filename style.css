@@ -435,9 +435,9 @@ article .icon {
     padding: 0.5rem;
 }
 
-.title {
+.contact-left .title {
     font-size: 3rem;
-    text-align: center;
+    text-align: left;
 }
 
 .contact-info-container {
